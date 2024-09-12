@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5M02Slider.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="napis próbny"
+                FontSize="20"
+                x:Name="lblNapis"
+                />
+            <Slider
+                Minimum="10"
+                Maximum="100"
+                Value="20"
+                ValueChanged="onSliderChanged"
+                x:Name="slSlider"
+                />
+            <Label
+                Text="rozamir czcionki: 20"
+                x:Name="lblInfo"
+                />
+            <Button
+                Text="ustaw na 30"
+                Clicked="onBtnClicked"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
